@@ -20,7 +20,6 @@
     {
       "name": "excludeEvents",
       "type": "boolean",
-      "example": "STRING,STRING,STRING",
       "help" : "If true, a regex match determines events to exclude, otherwise a regex determines events to include.",
 	    "required" : false
     }

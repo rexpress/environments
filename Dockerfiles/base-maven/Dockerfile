@@ -1,4 +1,4 @@
-FROM regexpress/java:oraclejdk8
+FROM regexpress/java:latest
 
 ENV MAVEN_VERSION 3.3.9
 ENV MAVEN_HOME /usr/lib/mvn

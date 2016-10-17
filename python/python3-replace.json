@@ -1,0 +1,17 @@
+{
+	"name": "python3-replace",
+	"description": "Testing python3 regex replace",
+	"author": "regular.express",
+	"version": 1,
+	"docker_image": "regexpress/python3-replace",
+	"properties": [
+		{
+			"name": "match",
+			"type": "string"
+		},
+		{
+			"name": "replace",
+			"type": "string"
+		}
+	]
+}

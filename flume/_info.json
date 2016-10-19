@@ -1,5 +1,9 @@
 {	
 	"title": "Apache Flume",
 	"description": "Apache Flume is a distributed, reliable, and available service for efficiently collecting, aggregating, and moving large amounts of log data. ",
-	"website": "https://hive.apache.org/"
+	"website": "https://hive.apache.org/",
+	"icon": {
+		"type": "devicon",
+		"value": "apache"
+	}
 }

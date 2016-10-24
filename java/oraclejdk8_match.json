@@ -7,7 +7,7 @@
   "properties": [
     {
       "name": "test_type",
-      "type": "string",
+      "type": "hidden",
       "value": "match"
     },
     {

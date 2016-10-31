@@ -7,7 +7,7 @@
     {
       "name": "config",
       "type": "string",
-      "example": "location / {\n        root   /usr/share/nginx/html;\n        index  index.html index.htm;\nrewrite ^/v/(.*)$ /index.html?q=$1;\n}",
+      "example": "location / {\nrewrite ^/v/(.*)$ /index.html?q=$1;\n}",
       "help" : "Nginx location config.",
       "required" : true
     }

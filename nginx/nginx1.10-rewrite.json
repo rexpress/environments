@@ -1,5 +1,5 @@
 {
-  "name": "Nginx 1.10 Rewrite Rule Test",
+  "title": "Nginx 1.10 Rewrite Rule Test",
   "description": "Testing Nginx rewrite rule config.",
   "author": "regular.express",
   "docker_image": "regexpress/nginx:1.10",

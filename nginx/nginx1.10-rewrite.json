@@ -1,0 +1,15 @@
+{
+  "name": "Nginx 1.10 Rewrite Rule Test",
+  "description": "Testing Nginx rewrite rule config.",
+  "author": "regular.express",
+  "docker_image": "regexpress/nginx:1.10",
+  "properties": [
+    {
+      "name": "config",
+      "type": "string",
+      "example": "location / {\n        root   /usr/share/nginx/html;\n        index  index.html index.htm;\nrewrite ^/v/(.*)$ /index.html?q=$1;\n}",
+      "help" : "Nginx location config.",
+      "required" : true
+    }
+  ]
+}

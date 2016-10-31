@@ -1,0 +1,9 @@
+{
+	"title": "Nginx",
+	"description": "Nginx (pronounced \"engine x\") is software to provide a web server.",
+	"website": "http://nginx.org/",
+	"icon": {
+		"type": "devicon",
+		"value": "nginx"
+	}
+}

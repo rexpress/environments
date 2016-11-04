@@ -1,8 +1,7 @@
 {
-  "name": "Oracle Java 8 Regex Match",
+  "title": "Oracle Java 8 Regex Match",
   "description": "Testing oracle java 8 regular expression for string match.",
   "author": "regular.express",
-  "version": "1",
   "docker_image": "regexpress/java:1.8",
   "properties": [
     {

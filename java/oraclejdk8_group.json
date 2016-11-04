@@ -1,8 +1,7 @@
 {
-  "name": "Oracle Java 8 Regex Group",
+  "title": "Oracle Java 8 Regex Group",
   "description": "Testing oracle java 8 regular expression for capturing group.",
   "author": "regular.express",
-  "version": "1",
   "docker_image": "regexpress/java:1.8",
   "properties": [
     {

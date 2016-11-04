@@ -2,7 +2,6 @@
 	"title": "Hive 2 Regex SerDe",
 	"description": "Testing hive 2.10 regex serde",
 	"author": "regular.express",
-	"version": "2.10",
 	"docker_image": "regexpress/hive:2.10",
 	"properties": [
 		{

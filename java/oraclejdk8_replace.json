@@ -1,8 +1,7 @@
 {
-  "name": "Oracle Java 8 Regex Replace",
+  "title": "Oracle Java 8 Regex Replace",
   "description": "Testing oracle java 8 regular expression for string replace.",
   "author": "regular.express",
-  "version": "1",
   "docker_image": "regexpress/java:1.8",
   "properties": [
     {

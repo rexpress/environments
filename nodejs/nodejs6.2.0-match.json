@@ -1,0 +1,43 @@
+{
+	"title": "NodeJS 6.2.0 regex match",
+	"description": "Testing nodejs regex match",
+	"author": "regular.express",
+	"docker_image": "regexpress/nodejs:6.2.0",
+	"properties": [
+		{
+			"name": "test_type",
+			"type": "hidden",
+			"value" : "match"
+		},
+		{
+			"name": "regex",
+			"type": "string",
+			"help": "Regular Expression."
+		},
+		{
+			"name": "global",
+			"type": "boolean",
+			"help": "find all matches rather than stopping after the first match"
+		},
+		{
+			"name": "ignore",
+			"type": "boolean",
+			"help": "ignore case"
+		},
+		{
+			"name": "multiline",
+			"type": "boolean",
+			"help": "treat beginning and end characters (^ and $) as working over multiple lines (i.e., match the beginning or end of each line (delimited by \n or \r), not only the very beginning or end of the whole input string)"
+		},
+		{
+			"name": "unicode",
+			"type": "boolean",
+			"help": "treat pattern as a sequence of unicode code points"
+		},
+		{
+			"name": "sticky",
+			"type": "boolean",
+			"help": "matches only from the index indicated by the lastIndex property of this regular expression in the target string (and does not attempt to match from any later indexes)."
+		}
+	]
+}

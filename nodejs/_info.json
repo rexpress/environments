@@ -1,0 +1,9 @@
+{
+	"title": "NodeJS",
+	"description": "Node.js is an open-source, cross-platform JavaScript runtime environment for developing a diverse variety of tools and applications.",
+	"website": "https://nodejs.org/",
+	"icon": {
+		"type": "devicon",
+		"value": "nodejs"
+	}
+}

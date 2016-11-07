@@ -13,7 +13,7 @@
 			"name": "regex",
 			"type": "string",
 			"required": true,
-			"example": "([A-Za-z]*)"
+			"example": "([A-Za-z]*)",
 			"help": "Regular expression."
 		},
 		{

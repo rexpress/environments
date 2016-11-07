@@ -12,6 +12,8 @@
 		{
 			"name": "regex",
 			"type": "string",
+			"required": true,
+			"example": "([A-Za-z]*)",
 			"help": "Regular Expression."
 		},
 		{

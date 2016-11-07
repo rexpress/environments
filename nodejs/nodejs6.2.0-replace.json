@@ -12,11 +12,14 @@
 		{
 			"name": "regex",
 			"type": "string",
+			"example": "([A-Za-z]*)",
+			"required": true,
 			"help": "Regular Expression."
 		},
 		{
 			"name": "replace",
 			"type": "string",
+			"example": "$1!",
 			"help": "Replace string."
 		},
 		{

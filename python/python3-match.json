@@ -12,7 +12,14 @@
 		{
 			"name": "regex",
 			"type": "string",
+			"required": true,
+			"example": "([A-Z])",
 			"help": "Regular Expression."
+		},
+		{
+			"name": "replace",
+			"type": "string",
+			"help": "Replace string."
 		},
 		{
 			"name": "IGNORECASE",

@@ -1,0 +1,102 @@
+{
+	"title": "C++ 11 Regex Match",
+	"description": "Testing C++ 11 regex_match function",
+	"author": "regular.express",
+	"docker_image": "regexpress/cpp:11",
+	"properties": [
+		{
+			"name": "test_type",
+			"type": "hidden",
+			"value" : "match"
+		},
+		{
+			"name": "regex",
+			"type": "hidden",
+			"help": "Regular expression.",
+			"example": "([A-Za-z]+)"
+		},
+		{
+			"name": "test_subtype",
+			"type": "list",
+			"list": {
+				"match": "Match",
+				"extract": "Extract"
+			},
+			"help" : "'Match' is only test string is matched. 'Extract' type shows captured group."
+		},
+		{
+			"name": "icase",
+			"type": "boolean",
+			"help" : "Regular expressions match without regard to case."
+		},
+		{
+			"name": "nosubs",
+			"type": "boolean",
+			"help" : "The match_results structure will not contain sub-expression matches."
+		},
+		{
+			"name": "optimize",
+			"type": "boolean",
+			"help" : "Matching efficiency is preferred over efficiency constructing regex objects."
+		},
+		{
+			"name": "collate",
+			"type": "boolean",
+			"help" : "Character ranges, like \"[a-b]\", are affected by locale."
+		},
+		{
+	      "name": "syntax_type",
+	      "type": "list",
+	      "list" : {
+	          "ECMAScript" : "ECMAScript",
+	          "basic" : "basic",
+	          "extended" : "extended",
+	          "awk" : "awk",
+	          "grep" : "grep",
+	          "egrep" : "egrep"
+	      },
+	      "default": "ECMAScript",
+	      "help" : "Grammer of regex. These member constants are aliases of the homonym constants under the std::regex_constants namespace."
+	    },
+		{
+			"name": "match_not_bol",
+			"type": "boolean",
+			"help" : "The first character is not considered a beginning of line (\"^\" does not match)."
+		},
+		{
+			"name": "match_not_eol",
+			"type": "boolean",
+			"help" : "The last character is not considered an end of line (\"$\" does not match)."
+		},
+		{
+			"name": "match_not_bow",
+			"type": "boolean",
+			"help" : "	The escape sequence \"\b\" does not match as a beginning-of-word."
+		},
+		{
+			"name": "match_not_eow",
+			"type": "boolean",
+			"help" : "The escape sequence \"\b\" does not match as an end-of-word."
+		},
+		{
+			"name": "match_any",
+			"type": "boolean",
+			"help" : "Any match is acceptable if more than one match is possible."
+		},
+		{
+			"name": "match_not_null",
+			"type": "boolean",
+			"help" : "Empty sequences do not match."
+		},
+		{
+			"name": "match_continuous",
+			"type": "boolean",
+			"help" : "The expression must match a sub-sequence that begins at the first character. Sub-sequences must begin at the first character to match."
+		},
+		{
+			"name": "match_prev_avail",
+			"type": "boolean",
+			"help" : "One or more characters exist before the first one. (match_not_bol and match_not_bow are ignored)"
+		}
+	]
+}

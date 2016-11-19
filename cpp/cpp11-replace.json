@@ -1,0 +1,80 @@
+{
+	"title": "C++ 11 Regex Replace",
+	"description": "Testing C++ 11 regex_replace function",
+	"author": "regular.express",
+	"docker_image": "regexpress/cpp:11",
+	"properties": [
+		{
+			"name": "test_type",
+			"type": "hidden",
+			"value" : "replace"
+		},
+		{
+			"name": "regex",
+			"type": "hidden",
+			"help": "Regular expression.",
+			"example": "([A-Za-z]+)"
+		},
+		{
+			"name": "replace",
+			"type": "string",
+			"help": "Replace string.",
+			"example": "([A-Za-z]+)"
+		},
+		{
+			"name": "match_not_bol",
+			"type": "boolean",
+			"help" : "The first character is not considered a beginning of line (\"^\" does not match)."
+		},
+		{
+			"name": "match_not_eol",
+			"type": "boolean",
+			"help" : "The last character is not considered an end of line (\"$\" does not match)."
+		},
+		{
+			"name": "match_not_bow",
+			"type": "boolean",
+			"help" : "	The escape sequence \"\b\" does not match as a beginning-of-word."
+		},
+		{
+			"name": "match_not_eow",
+			"type": "boolean",
+			"help" : "The escape sequence \"\b\" does not match as an end-of-word."
+		},
+		{
+			"name": "match_any",
+			"type": "boolean",
+			"help" : "Any match is acceptable if more than one match is possible."
+		},
+		{
+			"name": "match_not_null",
+			"type": "boolean",
+			"help" : "Empty sequences do not match."
+		},
+		{
+			"name": "match_continuous",
+			"type": "boolean",
+			"help" : "The expression must match a sub-sequence that begins at the first character. Sub-sequences must begin at the first character to match."
+		},
+		{
+			"name": "match_prev_avail",
+			"type": "boolean",
+			"help" : "One or more characters exist before the first one. (match_not_bol and match_not_bow are ignored)"
+		},
+		{
+			"name": "format_sed",
+			"type": "boolean",
+			"help" : "Uses the same rules as the sed utility in POSIX to replace matches."
+		},
+		{
+			"name": "format_no_copy",
+			"type": "boolean",
+			"help" : "The sections in the target sequence that do not match the regular expression are not copied when replacing matches."
+		},
+		{
+			"name": "format_first_only",
+			"type": "boolean",
+			"help" : "Only the first occurrence of a regular expression is replaced."
+		}
+	]
+}

@@ -16,12 +16,12 @@
       "help" : "Regex string.",
       "required" : true
     },
-	{
-		"name": "replace",
-		"type": "string",
-		"example": "$1 $2 $3",
-		"help": "Replace string."
-	},
+  	{
+  		"name": "replace",
+  		"type": "string",
+  		"example": "$1 $2 $3",
+  		"help": "Replace string."
+  	},
     {
       "name": "CANON_EQ",
       "type": "boolean",

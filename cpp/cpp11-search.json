@@ -19,12 +19,12 @@
 			"name": "syntax_type",
 			"type": "list",
 			"list": {
-				"ECMAScript" : "ECMAScript",
-				"basic" : "basic",
-				"extended" : "extended",
-				"awk" : "awk",
-				"grep" : "grep",
-				"egrep" : "egrep"
+				"ECMAScript": "ECMAScript",
+				"basic": "basic",
+				"extended": "extended",
+				"awk": "awk",
+				"grep": "grep",
+				"egrep": "egrep"
 			},
 			"default": "ECMAScript",
 			"help": "Grammer of regex. These member constants are aliases of the homonym constants under the std::regex_constants namespace."
@@ -62,7 +62,7 @@
 		{
 			"name": "match_not_bow",
 			"type": "boolean",
-			"help": "	The escape sequence \"\\b\" does not match as a beginning-of-word."
+			"help": "The escape sequence \"\\b\" does not match as a beginning-of-word."
 		},
 		{
 			"name": "match_not_eow",

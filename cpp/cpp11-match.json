@@ -16,6 +16,20 @@
 			"example": "([A-Za-z]+)"
 		},
 		{
+			"name": "syntax_type",
+			"type": "list",
+			"list": {
+				"ECMAScript" : "ECMAScript",
+				"basic" : "basic",
+				"extended" : "extended",
+				"awk" : "awk",
+				"grep" : "grep",
+				"egrep" : "egrep"
+			},
+			"default": "ECMAScript",
+			"help": "Grammer of regex. These member constants are aliases of the homonym constants under the std::regex_constants namespace."
+		},
+		{
 			"name": "test_subtype",
 			"type": "list",
 			"list": {
@@ -44,20 +58,6 @@
 			"type": "boolean",
 			"help": "Character ranges, like \"[a-b]\", are affected by locale."
 		},
-		{
-			"name": "syntax_type",
-			"type": "list",
-			"list": {
-				"ECMAScript" : "ECMAScript",
-				"basic" : "basic",
-				"extended" : "extended",
-				"awk" : "awk",
-				"grep" : "grep",
-				"egrep" : "egrep"
-			},
-			"default": "ECMAScript",
-			"help": "Grammer of regex. These member constants are aliases of the homonym constants under the std::regex_constants namespace."
-	    },
 		{
 			"name": "match_not_bol",
 			"type": "boolean",

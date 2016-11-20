@@ -71,12 +71,12 @@
 		{
 			"name": "match_not_bow",
 			"type": "boolean",
-			"help": "The escape sequence \"\b\" does not match as a beginning-of-word."
+			"help": "The escape sequence \"\\b\" does not match as a beginning-of-word."
 		},
 		{
 			"name": "match_not_eow",
 			"type": "boolean",
-			"help": "The escape sequence \"\b\" does not match as an end-of-word."
+			"help": "The escape sequence \"\\b\" does not match as an end-of-word."
 		},
 		{
 			"name": "match_any",

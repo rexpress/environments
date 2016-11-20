@@ -1,8 +1,8 @@
 {
-	"title": "NodeJS 6.2.0 regex match",
+	"title": "NodeJS 6.7.0 regex match",
 	"description": "Testing nodejs regex match",
 	"author": "regular.express",
-	"docker_image": "regexpress/nodejs:6.2.0",
+	"docker_image": "regexpress/nodejs:6.7.0",
 	"properties": [
 		{
 			"name": "test_type",

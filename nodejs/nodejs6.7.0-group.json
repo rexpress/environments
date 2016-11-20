@@ -1,26 +1,20 @@
 {
-	"title": "NodeJS 6.2.0 regex replace",
-	"description": "Testing nodejs regex replace",
+	"title": "NodeJS 6.7.0 regex group",
+	"description": "Testing nodejs regex group",
 	"author": "regular.express",
-	"docker_image": "regexpress/nodejs:6.2.0",
+	"docker_image": "regexpress/nodejs:6.7.0",
 	"properties": [
 		{
 			"name": "test_type",
 			"type": "hidden",
-			"value" : "replace"
+			"value" : "group"
 		},
 		{
 			"name": "regex",
 			"type": "string",
-			"example": "([A-Za-z]*)",
 			"required": true,
+			"example": "([A-Za-z]*)",
 			"help": "Regular Expression."
-		},
-		{
-			"name": "replace",
-			"type": "string",
-			"example": "$1!",
-			"help": "Replace string."
 		},
 		{
 			"name": "global",

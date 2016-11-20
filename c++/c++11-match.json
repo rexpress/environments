@@ -13,7 +13,8 @@
 			"name": "regex",
 			"type": "hidden",
 			"help": "Regular expression.",
-			"example": "([A-Za-z]+)"
+			"example": "([A-Za-z]+)",
+			"required": true
 		},
 		{
 			"name": "syntax_type",

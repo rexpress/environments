@@ -20,7 +20,7 @@
 			"name": "replace",
 			"type": "string",
 			"help": "Replace string.",
-			"example": "([A-Za-z]+)"
+			"example": "$1!"
 		},
 		{
 			"name": "syntax_type",

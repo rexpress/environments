@@ -37,7 +37,7 @@
 				"match": "Match",
 				"extract": "Extract"
 			},
-			"default": "Match",
+			"default": "match",
 			"help": "'Match' is only test string is matched. 'Extract' type shows captured group."
 		},
 		{

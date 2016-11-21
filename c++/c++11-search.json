@@ -11,7 +11,7 @@
 		},
 		{
 			"name": "regex",
-			"type": "hidden",
+			"type": "string",
 			"help": "Regular expression.",
 			"example": "([A-Za-z]+)",
 			"required": true

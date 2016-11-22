@@ -14,7 +14,8 @@
 			"type": "string",
 			"help": "Regular expression.",
 			"example": "([A-Za-z]+)",
-			"required": true
+			"required": true,
+			"important": true
 		},
 		{
 			"name": "syntax_type",
@@ -28,8 +29,9 @@
 				"egrep": "egrep"
 			},
 			"default": "ECMAScript",
-			"help": "Grammer of regex. These member constants are aliases of the homonym constants under the std::regex_constants namespace."
-	    },
+			"help": "Grammer of regex. These member constants are aliases of the homonym constants under the std::regex_constants namespace.",
+			"important": true
+	  },
 		{
 			"name": "icase",
 			"type": "boolean",

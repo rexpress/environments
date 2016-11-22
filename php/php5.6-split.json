@@ -14,7 +14,8 @@
 			"type": "string",
 			"example": "/-/",
 			"required": true,
-			"help": "Regular Expression. Don't add flags after regex."
+			"help": "Regular Expression. Don't add flags after regex.",
+			"important": true
 		},
 		{
 			"name": "PCRE_CASELESS",

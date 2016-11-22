@@ -8,8 +8,9 @@
       "name": "config",
       "type": "string",
       "example": "location / {\nrewrite ^/v/(.*)$ /index.html?q=$1;\n}",
-      "help" : "Nginx location config.",
-      "required" : true
+      "help":"Nginx location config.",
+      "required": true,
+      "important": true
     }
   ]
 }

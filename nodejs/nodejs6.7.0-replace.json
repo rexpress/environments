@@ -14,13 +14,15 @@
 			"type": "string",
 			"example": "([A-Za-z]*)",
 			"required": true,
-			"help": "Regular Expression."
+			"help": "Regular Expression.",
+			"important": true
 		},
 		{
 			"name": "replace",
 			"type": "string",
 			"example": "$1!",
-			"help": "Replace string."
+			"help": "Replace string.",
+			"important": true
 		},
 		{
 			"name": "global",

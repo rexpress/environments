@@ -14,7 +14,8 @@
 			"type": "string",
 			"required": true,
 			"example": "[A-Za-z]\\d",
-			"help": "Regular Expression."
+			"help": "Regular Expression.",
+			"important": true
 		},
 		{
 			"name": "global",

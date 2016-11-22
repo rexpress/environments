@@ -7,27 +7,29 @@
 		{
 			"name": "test_type",
 			"type": "hidden",
-			"value" : "replace"
+			"value": "replace"
 		},
 		{
 			"name": "searchPattern",
 			"type": "string",
 			"example": "([a-zA-Z]*) ([a-zA-Z]*) ([a-zA-Z]*)",
-			"help" : "Regular expression for replacement.",
-			"required" : true
+			"help":"Regular expression for replacement.",
+			"required": true,
+			"important": true
 		},
 		{
 			"name": "replaceString",
 			"type": "string",
-			"help" : "The replacement string.",
+			"help":"The replacement string.",
 			"example": "$1! $2! $3!",
-			"required" : false
+			"required": false,
+			"important": true
 		},
 		{
 			"name": "charset",
 			"type": "string",
-			"help" : "For using the specified charset.",
-			"required" : false
+			"help":"For using the specified charset.",
+			"required": false
 		}
 	]
 }

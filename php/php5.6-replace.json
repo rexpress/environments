@@ -14,13 +14,15 @@
 			"type": "string",
 			"example": "/([A-Z])/",
 			"required": true,
-			"help": "Regular Expression. Don't add flags after regex."
+			"help": "Regular Expression. Don't add flags after regex.",
+			"important": true
 		},
 		{
 			"name": "replace",
 			"type": "string",
 			"example": "$1_",
-			"help": "Replace string."
+			"help": "Replace string.",
+			"important": true
 		},
 		{
 			"name": "PCRE_CASELESS",

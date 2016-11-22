@@ -14,7 +14,8 @@
 			"type": "string",
 			"example": "([A-Z])",
 			"required": true,
-			"help": "Regular Expression."
+			"help": "Regular Expression.",
+			"important": true
 		},
 		{
 			"name": "IGNORECASE",

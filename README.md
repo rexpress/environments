@@ -46,12 +46,11 @@ Each environment's file in the group should be placed in same folder with `_info
 ```
 
 This includes title, description, author and docker image for testing environment. This metadata is shown in UI directly. 
-
-Parameter is placed in `properties` value as array. Parameter's `name` is shown in UI and also used to send as parameter to image. We support `type` as `string`, `boolean`, `hidden`, `list`. `hidden` type isn't shown in the UI but is sent as specific value that is in json. `list` parameter works like <select> tag in html. It is shown as combobox in the UI. `example` is example of that parameter as written. It is shown below the  parameter. `help` parameter is document for that parameter. Parameter's help tooltip shows it. If `required` parameter is true, UI shows it as default but if it is false, it is hidden unless click Advanced Mode. 
-
+Parameter is placed in `properties` value as array. Parameter's `name` is shown in UI and also used to send as parameter to image. We support `type` as `string`, `boolean`, `hidden`, `list`. `hidden` type isn't shown in the UI but is sent as specific value that is in json. `list` parameter works like 'select' tag in html. It is shown as combobox in the UI. `example` is example of that parameter as written. It is shown below the  parameter. `help` parameter is document for that parameter. Parameter's help tooltip shows it. If `required` parameter is true, UI shows it as default but if it is false, it is hidden unless click Advanced Mode. 
 
 
 If type is boolean, default value can be set as following.
+
 
 ```json
 {
@@ -61,7 +60,9 @@ If type is boolean, default value can be set as following.
 }
 ```
 
+
 And if type is list, detail form is following format.
+
 
 ```json
 {
@@ -75,9 +76,11 @@ And if type is list, detail form is following format.
 }
 ```
 
+
 List of value is in `list` as object's key/value pair. Key is internal value that used to send as parameter. But UI just shows the it's value. This also can be set default value. It shoud be one of key list.
 
 If `type` is `hidden`, it is hidden in UI but it is sent as specific `value`. In this, 'match' string will be sent as 'test_type' parameter.
+
 
 ```json
 {
@@ -99,19 +102,25 @@ All of these parameters and input dataset are encoded to json before test. For e
 }
 ```
 
+
 The input dataset is encoded in a json array as following.
+
 
 ```json
 ["123", "test", "012, "b"]
 ```
 
+
 Then the parameter and dataset json are each encoded as base64 to send to docker container. We use base64 to avoid preprocessing special character in different operating system. So docker command for this test is following.
+
 
 ```
 $ docker run reposotory/project:tag ew0KCSJ0ZXN0X3R5cGUiOiAibWF0Y2giLA0KICAJInJlZ2V4IjogIihbMC05XSspIiwNCiAgCSJpY2FzZSI6IHRydWUNCn0=  WyIxMjMiLCAidGVzdCIsICIwMTIsICJiIl0=
 ```
 
+
 So docker container should decode parameter encoded as base64, and parse json string. Then it will use the parameter and dataset for executing regex testcode. Docker image we provide uses `base64` command to decode base64 parameter in the bash shell. See this bash shell code:
+
 
 ```shell
 arg=();
@@ -121,11 +130,13 @@ for var in "$@";
 path_of_testprogram "${arg[@]}"
 ```
 
+
 This bash shell decodes the base64 parameters passed in the docker command and passes them to the test program.
 
 
 
 After executing program, It should return json for test result as following format. 
+
 
 ```json
 {

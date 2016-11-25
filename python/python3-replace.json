@@ -14,13 +14,15 @@
 			"type": "string",
 			"required": true,
 			"example": "([A-Z])",
-			"help": "Regular Expression."
+			"help": "Regular Expression.",
+			"important": true
 		},
 		{
 			"name": "replace",
 			"type": "string",
 			"example": "\\1_",
-			"help": "Replace string."
+			"help": "Replace string.",
+			"important": true
 		},
 		{
 			"name": "IGNORECASE",

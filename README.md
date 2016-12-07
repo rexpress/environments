@@ -225,7 +225,7 @@ Group type is complex a little bit. This type is for representing the captured g
 
 For reading these result json, we use standard output stream of test program. To distinguish result json and other output in program, we uses special phrase for this. We just capture json result between ##START_RESULT## and ##END_RESULT##. So we ignore other output not in the phrases. Test docker image should print json result that is placed between that phrases. For example:
 
-``json
+```json
 ...
 ##START_RESULT##
 {
@@ -238,7 +238,7 @@ For reading these result json, we use standard output stream of test program. To
  	}
 }
 ##END_RESULT##
-..
+...
 ```
 
 

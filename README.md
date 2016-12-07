@@ -107,7 +107,7 @@ The input dataset is encoded in a json array as following.
 
 
 ```json
-["123", "test", "012, "b"]
+["123", "test", "012", "b"]
 ```
 
 
@@ -198,7 +198,7 @@ This type indicates whether each record matches a regular expression. This is sa
 ```json
 {
 	"type": "GROUP",
-	"columns": ["Group 0", "Group 1"]
+	"columns": ["Group 0", "Group 1"],
  	"result": {
 		"resultList": [
 			{
@@ -225,7 +225,7 @@ Group type is complex a little bit. This type is for representing the captured g
 
 For reading these result json, we use standard output stream of test program. To distinguish result json and other output in program, we uses special phrase for this. We just capture json result between ##START_RESULT## and ##END_RESULT##. So we ignore other output not in the phrases. Test docker image should print json result that is placed between that phrases. For example:
 
-```
+``json
 ...
 ##START_RESULT##
 {
